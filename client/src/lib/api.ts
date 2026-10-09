@@ -50,7 +50,7 @@ class ApiClient {
    */
   private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
     const url = `${this.baseUrl}${endpoint.startsWith('/') ? endpoint : `/${endpoint}`}`;
-    
+
     const headers = new Headers(options.headers || {});
     const authHeaders = this.getAuthHeader();
     for (const [k, v] of Object.entries(authHeaders)) {

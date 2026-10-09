@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { useAppStore } from '@/stores/useAppStore';
 import { toast } from 'sonner';
+import { BrandLogo } from '@/components/ui/BrandLogo';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -56,17 +57,7 @@ export default function LoginPage() {
       <div className="w-full lg:w-[54%] flex flex-col justify-between p-6 sm:p-10 lg:p-14 min-h-screen">
         {/* Top Header: Logo + Create Account Link */}
         <div className="flex items-center justify-between w-full">
-          <Link href="/dashboard" className="flex items-center gap-2 group">
-            {/* Outline Document Icon */}
-            <div className="h-8 w-7 rounded-sm border-2 border-slate-900 flex flex-col justify-center items-center gap-[3px] p-[3px]">
-              <div className="w-full h-[1.5px] bg-slate-900 rounded-full" />
-              <div className="w-full h-[1.5px] bg-slate-900 rounded-full" />
-              <div className="w-2/3 self-start h-[1.5px] bg-slate-900 rounded-full" />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-slate-950 font-serif">
-              Bharat<span className="text-[#9C4B27]">Doc</span>
-            </span>
-          </Link>
+          <BrandLogo href="/dashboard" theme="light" size="lg" />
 
           <div className="text-xs text-slate-600">
             <span>New to BharatDoc? </span>

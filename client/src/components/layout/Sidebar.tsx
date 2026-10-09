@@ -15,8 +15,10 @@ import {
   Settings,
   HelpCircle,
   X,
+  Sparkles,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { BrandLogo } from '@/components/ui/BrandLogo';
 
 export function Sidebar() {
   const pathname = usePathname();
@@ -29,9 +31,9 @@ export function Sidebar() {
       icon: Home,
     },
     {
-      title: 'Upload Documents',
-      href: '/documents/upload',
-      icon: Upload,
+      title: 'Document Intelligence',
+      href: '/document-intelligence',
+      icon: Sparkles,
     },
     {
       title: 'Document Library',
@@ -43,11 +45,6 @@ export function Sidebar() {
       href: '/queue',
       icon: CheckSquare,
       badge: '12',
-    },
-    {
-      title: 'Search & Query',
-      href: '/query',
-      icon: Search,
     },
     {
       title: 'Templates',
@@ -90,28 +87,13 @@ export function Sidebar() {
         )}
       >
         {/* Brand Header */}
-        <div className="h-16 flex items-center justify-between px-6 border-b border-[#1c252d]">
-          <Link
+        <div className="h-16 flex items-center justify-between px-5 border-b border-[#1c252d]">
+          <BrandLogo
             href="/dashboard"
+            theme="dark"
+            size="md"
             onClick={() => setSidebarOpen(false)}
-            className="flex items-center gap-3 group"
-          >
-            {/* Custom Folded-Sheet Glyph */}
-            <div className="h-7 w-6 rounded-[2px] border-2 border-white flex flex-col justify-center items-center gap-[2.5px] p-[2px] relative overflow-hidden transition-transform group-hover:scale-105">
-              <div className="w-full h-[1.5px] bg-white rounded-full" />
-              <div className="w-full h-[1.5px] bg-white rounded-full" />
-              <div className="w-2/3 self-start h-[1.5px] bg-white rounded-full" />
-            </div>
-
-            <div>
-              <div className="text-base font-bold tracking-tight text-white font-serif leading-none">
-                Bharat<span className="text-[#B85D36]">Doc</span>
-              </div>
-              <div className="text-[9px] uppercase tracking-widest text-slate-400 font-mono mt-0.5">
-                AI DOCUMENT INTELLIGENCE
-              </div>
-            </div>
-          </Link>
+          />
 
           {/* Mobile close button */}
           <button

@@ -8,13 +8,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm',
-        destructive: 'bg-red-600 text-white hover:bg-red-700 shadow-sm',
-        outline: 'border border-slate-200 bg-white hover:bg-slate-50 text-slate-800 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800',
-        secondary: 'bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700',
-        ghost: 'hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:text-slate-300 dark:hover:text-slate-100',
-        link: 'text-blue-600 underline-offset-4 hover:underline dark:text-blue-400',
-        success: 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm',
+        default: 'bg-[#9C4B27] text-white hover:bg-[#853D1C] shadow-xs active:translate-y-0',
+        destructive: 'bg-red-600 text-white hover:bg-red-700 shadow-xs',
+        outline: 'border border-[#E2DDD3] bg-white hover:bg-[#FAF8F5] text-slate-800 shadow-2xs',
+        secondary: 'bg-[#FAF7F2] text-slate-900 hover:bg-[#F2ECE1] border border-[#E8E4DA] shadow-2xs',
+        ghost: 'hover:bg-[#FAF8F5] hover:text-slate-900',
+        link: 'text-[#9C4B27] underline-offset-4 hover:underline',
+        success: 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-xs',
       },
       size: {
         default: 'h-9 px-4 py-2',

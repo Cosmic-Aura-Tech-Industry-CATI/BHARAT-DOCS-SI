@@ -30,7 +30,7 @@ export function Header() {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      router.push(`/query?search=${encodeURIComponent(searchQuery.trim())}`);
+      router.push(`/document-intelligence?search=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 

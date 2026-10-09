@@ -31,7 +31,7 @@ export function RecentUploadsTable({ documents, isLoading }: RecentUploadsTableP
         <FileText className="mx-auto h-8 w-8 text-slate-400" />
         <h4 className="mt-2 text-sm font-medium text-slate-900 dark:text-slate-100">No documents yet</h4>
         <p className="text-xs text-slate-500">Upload your first GST invoice or bank statement to get started.</p>
-        <Link href="/documents/upload" className="mt-3 inline-block">
+        <Link href="/document-intelligence" className="mt-3 inline-block">
           <Button size="sm">Upload Document</Button>
         </Link>
       </div>

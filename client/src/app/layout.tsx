@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: 'BharatDoc (भारतDoc) — AI Document Intelligence System',
   description:
     'High-accuracy Human-in-the-Loop document intelligence engine for Indian MSMEs, Chartered Accountants, and Tax Professionals. Automated GST, Form-16, and handwritten bill extraction.',
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
 };
 
 export default function RootLayout({

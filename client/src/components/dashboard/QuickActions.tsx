@@ -8,16 +8,16 @@ import { Button } from '@/components/ui/Button';
 export function QuickActions({ needsReviewCount }: { needsReviewCount: number }) {
   return (
     <div className="flex flex-wrap items-center gap-2.5">
-      <Link href="/documents/upload">
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white gap-2 font-medium shadow-sm">
+      <Link href="/document-intelligence">
+        <Button className="bg-[#9C4B27] hover:bg-[#853D1C] text-white gap-2 font-medium shadow-xs">
           <UploadCloud className="h-4 w-4" />
           <span>Upload Document</span>
         </Button>
       </Link>
 
-      <Link href="/query">
-        <Button variant="outline" className="gap-2 font-medium border-slate-300 dark:border-slate-700">
-          <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+      <Link href="/document-intelligence">
+        <Button variant="outline" className="gap-2 font-medium border-slate-300">
+          <Sparkles className="h-4 w-4 text-[#9C4B27]" />
           <span>Natural Language Query</span>
         </Button>
       </Link>

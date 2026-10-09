@@ -135,7 +135,7 @@ export default function TemplatesPage() {
           </p>
         </div>
 
-        <Link href="/documents/upload">
+        <Link href="/document-intelligence">
           <button className="h-9 px-5 bg-[#9C4B27] hover:bg-[#853D1C] text-white text-xs font-semibold rounded-lg shadow-xs flex items-center gap-2 transition cursor-pointer">
             <Sparkles className="h-3.5 w-3.5" />
             <span>Upload with Template</span>
@@ -240,7 +240,7 @@ export default function TemplatesPage() {
                 </button>
 
                 <Link
-                  href={`/documents/upload?type=${encodeURIComponent(item.docType)}`}
+                  href="/document-intelligence"
                   className="flex-1"
                 >
                   <button className="w-full h-8 px-3 rounded-lg bg-[#9C4B27] hover:bg-[#853D1C] text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-xs">
